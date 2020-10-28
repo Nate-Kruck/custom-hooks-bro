@@ -10,8 +10,8 @@ const CharacterPage = () => {
       <button
         onClick={() => setPage(page => page - 1)}
         disabled={page <= 1}
-      >&lt;</button>
-      <button onClick={() => setPage(page => page + 1)}>&gt;</button>
+      >prev</button>
+      <button onClick={() => setPage(page => page + 1)}>next</button>
       <CharacterList page={page} />
     </>
   );

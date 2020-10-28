@@ -5,10 +5,10 @@ exports[`App component renders App 1`] = `
   <button
     disabled=""
   >
-    &lt;
+    prev
   </button>
   <button>
-    &gt;
+    next
   </button>
   <h1>
     Loading...
