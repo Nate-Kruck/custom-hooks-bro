@@ -1,0 +1,96 @@
+body {
+  background: url(https://vignette2.wikia.nocookie.net/rickandmorty/images/7/7b/Picklerick.jpg/revision/latest?cb=20170725205548) top left no-repeat;
+  background: #99a4aa;
+  margin: 0;
+  padding: 0;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.characterBox {
+  width: 350px;
+  list-style: none;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+.card:before,
+.card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.card:hover:before {
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}
+
+.card:hover:after {
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}
+
+.card .imgBx {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.card:hover .imgBx {
+  bottom: 80px;
+}
+
+.card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .details {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: -25px;
+  height: 5px;
+  text-align: center;
+}
+
+.card .details figcaption {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  background-color: #99a4aa;
+  text-transform: uppercase;
+  display: block;
+}
